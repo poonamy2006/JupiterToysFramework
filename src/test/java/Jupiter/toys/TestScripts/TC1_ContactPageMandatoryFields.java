@@ -38,23 +38,20 @@ public class TC1_ContactPageMandatoryFields extends Base {
 
 		con.PopulateMandatoryFields("Testuser1", "testuser1@gmail.com", "Hi, Welcome, This is a test message.");
 
-		// Verify the mandatory fields messages are not displayed when data entered into
-		// textfields on contact page.
+		// Verify the mandatory fields messages are not displayed when data entered.
 
 		File f = new File("..//JupiterToys/Messages.xlsx");
 		FileInputStream fi = new FileInputStream(f);
 		XSSFWorkbook xs = new XSSFWorkbook(fi);
 		XSSFSheet xt = xs.getSheetAt(0);
 		int r = xt.getPhysicalNumberOfRows();
-		// int c = ws.getColumns();
-
 		for (int i = 0; i < r; i++) {
 
 			XSSFRow xr = xt.getRow(i);
 
 			int c = xr.getPhysicalNumberOfCells();
 			for (int j = 0; j < c; j++) {
-				// Cell c1 = ws.getCell(j, i);
+
 				XSSFCell xc = xr.getCell(j);
 				boolean Flag = con.isTextPresent(xc.getStringCellValue());
 				Assert.assertFalse(Flag);
