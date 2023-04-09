@@ -1,24 +1,25 @@
 package Jupiter.toys.TestScripts;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import Jupiter.toys.Assertions.Assertion1;
 import Jupiter.toys.Base.Base;
 import Jupiter.toys.Pages.Contact;
-import jxl.Cell;
-import jxl.Sheet;
-import jxl.Workbook;
-import jxl.read.biff.BiffException;
 
 public class TC1_ContactPageMandatoryFields extends Base {
 
-	
-	//Verify the mandatory fields error messages
+	// Verify the mandatory fields error messages
 	@Test
-	public void VerifyErrorMessages() throws InterruptedException, BiffException, IOException {
+	public void VerifyErrorMessages() throws IOException {
 
 		Contact con = new Contact(driver, pr);
 		con.ContactPageLink();
@@ -37,20 +38,25 @@ public class TC1_ContactPageMandatoryFields extends Base {
 
 		con.PopulateMandatoryFields("Testuser1", "testuser1@gmail.com", "Hi, Welcome, This is a test message.");
 
-		
-		//Verify the mandatory fields messages are not displayed when data entered into textfields on contact page.
-		
-		File f = new File("..//JupiterToys/ErrorMessages.xls");
-		Workbook wk = Workbook.getWorkbook(f);
-		Sheet ws = wk.getSheet(0);
-		int r = ws.getRows();
-		int c = ws.getColumns();
+		// Verify the mandatory fields messages are not displayed when data entered into
+		// textfields on contact page.
+
+		File f = new File("..//JupiterToys/Messages.xlsx");
+		FileInputStream fi = new FileInputStream(f);
+		XSSFWorkbook xs = new XSSFWorkbook(fi);
+		XSSFSheet xt = xs.getSheetAt(0);
+		int r = xt.getPhysicalNumberOfRows();
+		// int c = ws.getColumns();
 
 		for (int i = 0; i < r; i++) {
-			for (int j = 0; j < c; j++) {
-				Cell c1 = ws.getCell(j, i);
 
-				boolean Flag = con.isTextPresent(c1.getContents());
+			XSSFRow xr = xt.getRow(i);
+
+			int c = xr.getPhysicalNumberOfCells();
+			for (int j = 0; j < c; j++) {
+				// Cell c1 = ws.getCell(j, i);
+				XSSFCell xc = xr.getCell(j);
+				boolean Flag = con.isTextPresent(xc.getStringCellValue());
 				Assert.assertFalse(Flag);
 			}
 		}
