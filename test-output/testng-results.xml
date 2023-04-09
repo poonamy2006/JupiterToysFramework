@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="118010" started-at="2023-04-09T01:01:20Z" finished-at="2023-04-09T01:03:18Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="118010" started-at="2023-04-09T01:01:20Z" finished-at="2023-04-09T01:03:18Z">
+      <class name="Jupiter.toys.TestScripts.TC3_CartPage">
+        <test-method status="PASS" signature="BrowserLaunch()[pri:0, instance:Jupiter.toys.TestScripts.TC3_CartPage@cd3fee8]" name="BrowserLaunch" is-config="true" duration-ms="6433" started-at="2023-04-09T01:03:10Z" finished-at="2023-04-09T01:03:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method status="PASS" signature="ValidateCartPage()[pri:0, instance:Jupiter.toys.TestScripts.TC3_CartPage@cd3fee8]" name="ValidateCartPage" duration-ms="1899" started-at="2023-04-09T01:03:16Z" finished-at="2023-04-09T01:03:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateCartPage -->
+        <test-method status="PASS" signature="BrowserClose()[pri:0, instance:Jupiter.toys.TestScripts.TC3_CartPage@cd3fee8]" name="BrowserClose" is-config="true" duration-ms="102" started-at="2023-04-09T01:03:18Z" finished-at="2023-04-09T01:03:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserClose -->
+      </class> <!-- Jupiter.toys.TestScripts.TC3_CartPage -->
+      <class name="Jupiter.toys.TestScripts.TC1_ContactPageMandatoryFields">
+        <test-method status="PASS" signature="BrowserLaunch()[pri:0, instance:Jupiter.toys.TestScripts.TC1_ContactPageMandatoryFields@61230f6a]" name="BrowserLaunch" is-config="true" duration-ms="23435" started-at="2023-04-09T01:01:20Z" finished-at="2023-04-09T01:01:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method status="PASS" signature="VerifyErrorMessages()[pri:0, instance:Jupiter.toys.TestScripts.TC1_ContactPageMandatoryFields@61230f6a]" name="VerifyErrorMessages" duration-ms="2967" started-at="2023-04-09T01:01:44Z" finished-at="2023-04-09T01:01:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyErrorMessages -->
+        <test-method status="PASS" signature="BrowserClose()[pri:0, instance:Jupiter.toys.TestScripts.TC1_ContactPageMandatoryFields@61230f6a]" name="BrowserClose" is-config="true" duration-ms="415" started-at="2023-04-09T01:01:47Z" finished-at="2023-04-09T01:01:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserClose -->
+      </class> <!-- Jupiter.toys.TestScripts.TC1_ContactPageMandatoryFields -->
+      <class name="Jupiter.toys.TestScripts.TC2_SuccesssfulSubmissionMessage">
+        <test-method status="PASS" signature="BrowserLaunch()[pri:0, instance:Jupiter.toys.TestScripts.TC2_SuccesssfulSubmissionMessage@3c130745]" name="BrowserLaunch" is-config="true" duration-ms="5878" started-at="2023-04-09T01:01:47Z" finished-at="2023-04-09T01:01:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method status="PASS" signature="ValidateSubmissionMessage()[pri:0, instance:Jupiter.toys.TestScripts.TC2_SuccesssfulSubmissionMessage@3c130745]" name="ValidateSubmissionMessage" duration-ms="9487" started-at="2023-04-09T01:01:53Z" finished-at="2023-04-09T01:02:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateSubmissionMessage -->
+        <test-method status="PASS" signature="BrowserClose()[pri:0, instance:Jupiter.toys.TestScripts.TC2_SuccesssfulSubmissionMessage@3c130745]" name="BrowserClose" is-config="true" duration-ms="492" started-at="2023-04-09T01:02:03Z" finished-at="2023-04-09T01:02:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserClose -->
+        <test-method status="PASS" signature="BrowserLaunch()[pri:0, instance:Jupiter.toys.TestScripts.TC2_SuccesssfulSubmissionMessage@3c130745]" name="BrowserLaunch" is-config="true" duration-ms="6124" started-at="2023-04-09T01:02:03Z" finished-at="2023-04-09T01:02:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method status="PASS" signature="ValidateSubmissionMessage()[pri:0, instance:Jupiter.toys.TestScripts.TC2_SuccesssfulSubmissionMessage@3c130745]" name="ValidateSubmissionMessage" duration-ms="2212" started-at="2023-04-09T01:02:09Z" finished-at="2023-04-09T01:02:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateSubmissionMessage -->
+        <test-method status="PASS" signature="BrowserClose()[pri:0, instance:Jupiter.toys.TestScripts.TC2_SuccesssfulSubmissionMessage@3c130745]" name="BrowserClose" is-config="true" duration-ms="122" started-at="2023-04-09T01:02:11Z" finished-at="2023-04-09T01:02:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserClose -->
+        <test-method status="PASS" signature="BrowserLaunch()[pri:0, instance:Jupiter.toys.TestScripts.TC2_SuccesssfulSubmissionMessage@3c130745]" name="BrowserLaunch" is-config="true" duration-ms="6298" started-at="2023-04-09T01:02:12Z" finished-at="2023-04-09T01:02:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method status="PASS" signature="ValidateSubmissionMessage()[pri:0, instance:Jupiter.toys.TestScripts.TC2_SuccesssfulSubmissionMessage@3c130745]" name="ValidateSubmissionMessage" duration-ms="10972" started-at="2023-04-09T01:02:18Z" finished-at="2023-04-09T01:02:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateSubmissionMessage -->
+        <test-method status="PASS" signature="BrowserClose()[pri:0, instance:Jupiter.toys.TestScripts.TC2_SuccesssfulSubmissionMessage@3c130745]" name="BrowserClose" is-config="true" duration-ms="116" started-at="2023-04-09T01:02:29Z" finished-at="2023-04-09T01:02:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserClose -->
+        <test-method status="PASS" signature="BrowserLaunch()[pri:0, instance:Jupiter.toys.TestScripts.TC2_SuccesssfulSubmissionMessage@3c130745]" name="BrowserLaunch" is-config="true" duration-ms="11818" started-at="2023-04-09T01:02:29Z" finished-at="2023-04-09T01:02:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method status="PASS" signature="ValidateSubmissionMessage()[pri:0, instance:Jupiter.toys.TestScripts.TC2_SuccesssfulSubmissionMessage@3c130745]" name="ValidateSubmissionMessage" duration-ms="10759" started-at="2023-04-09T01:02:41Z" finished-at="2023-04-09T01:02:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateSubmissionMessage -->
+        <test-method status="PASS" signature="BrowserClose()[pri:0, instance:Jupiter.toys.TestScripts.TC2_SuccesssfulSubmissionMessage@3c130745]" name="BrowserClose" is-config="true" duration-ms="138" started-at="2023-04-09T01:02:52Z" finished-at="2023-04-09T01:02:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserClose -->
+        <test-method status="PASS" signature="BrowserLaunch()[pri:0, instance:Jupiter.toys.TestScripts.TC2_SuccesssfulSubmissionMessage@3c130745]" name="BrowserLaunch" is-config="true" duration-ms="7031" started-at="2023-04-09T01:02:52Z" finished-at="2023-04-09T01:02:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method status="PASS" signature="ValidateSubmissionMessage()[pri:0, instance:Jupiter.toys.TestScripts.TC2_SuccesssfulSubmissionMessage@3c130745]" name="ValidateSubmissionMessage" duration-ms="11088" started-at="2023-04-09T01:02:59Z" finished-at="2023-04-09T01:03:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateSubmissionMessage -->
+        <test-method status="PASS" signature="BrowserClose()[pri:0, instance:Jupiter.toys.TestScripts.TC2_SuccesssfulSubmissionMessage@3c130745]" name="BrowserClose" is-config="true" duration-ms="181" started-at="2023-04-09T01:03:10Z" finished-at="2023-04-09T01:03:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserClose -->
+      </class> <!-- Jupiter.toys.TestScripts.TC2_SuccesssfulSubmissionMessage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
